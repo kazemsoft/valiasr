@@ -1,0 +1,30 @@
+@keyframes dynamicOpacity {
+  0% {
+    opacity: 0;
+  }
+  25% {
+    opacity: 0.25;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  75% {
+    opacity: 0.75;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+.menuStyle:hover::before {
+  position: absolute;
+  content: "";
+  width: 100%;
+  height: 2px;
+  background-color: #61ce70;
+  bottom: -15px;
+  animation-name: dynamicOpacity;
+  animation-duration: 0.3s;
+}
+.menuStyle:hover {
+  color: #61ce70 !important;
+}
