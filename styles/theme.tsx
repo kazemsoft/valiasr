@@ -8,6 +8,13 @@ const colors = {
     textColor: "#7A7A7A",
     modalBg: "#bababa47",
   },
+  greenButton: {
+    100: "#00ff25",
+    200: "#16d632",
+    500: "#61CE70",
+    800: "#0f7e1f",
+    1000: "#056513",
+  }
 };
 
 export const theme = extendTheme({

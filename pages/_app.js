@@ -3,14 +3,15 @@ import { appWithTranslation } from "next-i18next";
 import Header from "../components/Header/Header";
 import { ChakraProvider, Container } from "@chakra-ui/react";
 import { theme } from "../styles/theme";
+import CustomContainer from "../components/CustomContainer/CustomContainer";
 
 function MyApp({ Component, pageProps }) {
   return (
     <ChakraProvider theme={theme}>
-      <Container maxW={{ base: "full", lg: "6xl" }} marginX={"auto"}>
+      <CustomContainer>
         <Header />
-        <Component {...pageProps} />
-      </Container>
+      </CustomContainer>
+      <Component {...pageProps} />
     </ChakraProvider>
   );
 }
