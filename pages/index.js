@@ -1,8 +1,12 @@
 import Head from "next/head";
-import Image from "next/image";
-import HomePage from "./home/Home";
+import { useRouter } from "next/router";
+import { useEffect } from "react";
 
 export default function Home() {
+  const router = useRouter(useEffect);
+  useEffect(() => {
+    router.push("/Home");
+  }, []);
   return (
     <div>
       <Head>

@@ -68,9 +68,10 @@ const NavContainer = () => {
           alignItems={"center"}
           justifyContent={"space-evenly"}
         >
-          {menuItems.map((menuItem) => {
+          {menuItems.map((menuItem, i) => {
             return (
               <Button
+                key={i}
                 color={"black"}
                 fontSize={"xl"}
                 variant={"unstyled"}

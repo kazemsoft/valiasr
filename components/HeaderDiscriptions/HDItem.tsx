@@ -1,32 +1,29 @@
-import { Box, Grid, GridItem, Text } from '@chakra-ui/react'
-import React from 'react'
+import { Box, ChakraProps, Grid, GridItem, Text } from '@chakra-ui/react'
+import React, { Fragment } from 'react'
 import Button from '../Button/CustomButton'
 import { Controls, Player } from '@lottiefiles/react-lottie-player'
 
-const HDItem = () => {
+type HDItemProps = {
+    playerSource: string,
+    textArray: { id: number, text: React.ReactElement }[],
+    button: boolean,
+}
+const HDItem = ({ playerSource, textArray, button }: HDItemProps) => {
     return (
-        <Grid templateColumns={"repeat(2,1fr)"}>
+        <Grid dir='rtl' templateColumns={{ base: "repeat(1,1fr)", lg: "repeat(2,1fr)" }}>
             <GridItem colSpan={1}>
                 <Player
                     autoplay
                     loop
-                    src="/animations/109118-programming-effects.json"
+                    src={playerSource}
                     style={{ height: '100%', width: '100%' }}
                 />
             </GridItem>
             <GridItem lineHeight={'3rem'} fontSize={'xl'} display={'flex'} flexDirection={'column'} justifyContent={'center'} alignItems={'center'} colSpan={1}>
-                <Text>
-                    A programming group with a lot of creative ideas
-                </Text>
-                <Text>
-                    Ready to transform your business
-                </Text>
-                <Text>
-                    To a lucrative startup!
-                </Text>
-                <Button>
+                {textArray.map((text, index) => <Fragment key={text.id}>{text.text}</Fragment>)}
+                {button && <Button>
                     Contact Us
-                </Button>
+                </Button>}
             </GridItem>
         </Grid>
     )
