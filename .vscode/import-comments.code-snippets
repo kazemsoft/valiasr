@@ -1,0 +1,25 @@
+{
+  "Variable Declaration Comment": {
+    "prefix": "comment",
+    "body": [
+      "//Material UI\n$1",
+      "//Contexts\n$2",
+      "//Zustands\n$3",
+      "//Styles\n$4",
+      "//Icons\n$5",
+      "//APIs\n$6",
+      "//Packages\n$7",
+      "//Hooks\n$8",
+      "//Utils\n$9",
+      "//Functions\n$10",
+      "//Components\n$11",
+    ],
+    "description": "import comments"
+  }
+
+}
+
+
+
+
+

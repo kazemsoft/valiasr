@@ -1,0 +1,18 @@
+// {
+//   "editor.fontSize": 18,
+//   "debug.console.fontSize": 18,
+//   "terminal.integrated.fontSize": 18,
+//   "editor.formatOnSave": true,
+//   "eslint.codeActionsOnSave.mode": "problems",
+//   "editor.formatOnPaste": true,
+//   "eslint.run": "onSave",
+//   "eslint.format.enable": true,
+//   "html.format.indentHandlebars": true,
+//   "html.format.indentInnerHtml": true,
+//   "editor.defaultFormatter": "dsznajder.es7-react-js-snippets"
+// }
+{
+    "maven.view": "flat",
+    "eslint.codeActionsOnSave.mode": "problems",
+    "eslint.enable": false
+}

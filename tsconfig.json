@@ -22,7 +22,7 @@
     "next-env.d.ts",
     "**/*.ts",
     "**/*.tsx"
-, "components/Nav/Natsx"  ],
+, "components/Header/Nav/Natsx"  ],
   "exclude": [
     "node_modules"
   ]
