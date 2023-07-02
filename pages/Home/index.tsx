@@ -1,16 +1,22 @@
-import React, { Fragment } from "react";
-import NavContainer from "../../components/Nav/Nav";
-import HeaderDescriptions from "../../components/HeaderDiscriptions/HeaderDescriptions";
-import { Box } from "@chakra-ui/react";
-import CustomContainer from "../../components/CustomContainer/CustomContainer";
+import React from "react";
+import HeaderDescriptions from "../../components/Header/HeaderDiscriptions/HeaderDescriptions";
+import CustomContainer from "../../components/global/CustomContainer/CustomContainer";
+import MainComponent from "../../components/Main/Main";
 
 const HomePage = () => {
     return (
-        <CustomContainer>
-            <div style={{ margin: "100px 0" }}>
-                <HeaderDescriptions />
-            </div>
-        </CustomContainer>
+        <>
+            <CustomContainer>
+                <div style={{ margin: "100px 0" }}>
+                    <HeaderDescriptions />
+                </div>
+            </CustomContainer>
+            <CustomContainer>
+                <div style={{ margin: "100px 0" }}>
+                    <MainComponent />
+                </div>
+            </CustomContainer>
+        </>
     );
 };
 

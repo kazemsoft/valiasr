@@ -1,4 +1,4 @@
-import NavContainer from "../Nav/Nav";
+import NavContainer from "./Nav/Nav";
 
 const Header = () => {
   return (

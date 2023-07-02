@@ -20,8 +20,8 @@ const colors = {
 export const theme = extendTheme({
   colors,
   fonts: {
-    heading: `'Open Sans', sans-serif`,
-    body: `'Raleway', sans-serif`,
+    heading: "Mulish, sans- serif",
+    body: "Mulish, sans- serif",
   },
   styles: {
     global: (props: GlobalStyleProps) => ({

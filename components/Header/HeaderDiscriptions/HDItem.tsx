@@ -1,6 +1,6 @@
 import { Box, ChakraProps, Grid, GridItem, Text } from '@chakra-ui/react'
 import React, { Fragment } from 'react'
-import Button from '../Button/CustomButton'
+import Button from '../../global/Button/CustomButton'
 import { Controls, Player } from '@lottiefiles/react-lottie-player'
 
 type HDItemProps = {

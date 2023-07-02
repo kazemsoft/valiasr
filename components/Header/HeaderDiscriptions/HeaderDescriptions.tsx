@@ -25,23 +25,23 @@ const HeaderDescriptions = () => {
   },
   {
     id: 5,
-    text: <Text fontSize={'16px'} lineHeight={'28px'} fontWeight={'500'} color={'black'} textAlign={'center'}>Highest response time</Text>
+    text: <Text fontSize={'16px'} lineHeight={'28px'} fontWeight={'900'} color={'black'} textAlign={'center'}>Highest response time</Text>
   },
   {
     id: 6,
-    text: <Text fontSize={'16px'} lineHeight={'28px'} fontWeight={'500'} color={'black'} textAlign={'center'}>More than 15 years of experience</Text>
+    text: <Text fontSize={'16px'} lineHeight={'28px'} fontWeight={'900'} color={'black'} textAlign={'center'}>More than 15 years of experience</Text>
   },
   {
     id: 7,
-    text: <Text fontSize={'16px'} lineHeight={'28px'} fontWeight={'500'} color={'black'} textAlign={'center'}>Examples of work in different fields</Text>
+    text: <Text fontSize={'16px'} lineHeight={'28px'} fontWeight={'900'} color={'black'} textAlign={'center'}>Examples of work in different fields</Text>
   },
   {
     id: 8,
-    text: <Text fontSize={'16px'} lineHeight={'28px'} fontWeight={'500'} color={'black'} textAlign={'center'}>Exclusive products</Text>
+    text: <Text fontSize={'16px'} lineHeight={'28px'} fontWeight={'900'} color={'black'} textAlign={'center'}>Exclusive products</Text>
   },
   {
     id: 9,
-    text: <Text fontSize={'16px'} lineHeight={'28px'} fontWeight={'500'} color={'black'} textAlign={'center'}>free consultation</Text>
+    text: <Text fontSize={'16px'} lineHeight={'28px'} fontWeight={'900'} color={'black'} textAlign={'center'}>free consultation</Text>
   },
   ]
   return <>
