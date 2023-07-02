@@ -21,7 +21,7 @@ const HeaderDescriptions = () => {
   const desc2 = [{
     id: 4,
     text:
-      <Text textAlign={'center'} fontSize={'16px'} lineHeight={2} paddingX={100} marginBottom={8}>Honesty in our behavior and words and actions are our lifestyle commitments and this feature distinguishes us from other programmers out there. In other words, everyone can code</Text>
+      <Text textAlign={'center'} fontSize={'16px'} lineHeight={2} marginTop={{ base: 8, md: 0 }} paddingX={{ base: 50, lg: 100 }} marginBottom={8}>Honesty in our behavior and words and actions are our lifestyle commitments and this feature distinguishes us from other programmers out there. In other words, everyone can code</Text>
   },
   {
     id: 5,

@@ -1,10 +1,11 @@
-import { Box } from '@chakra-ui/react'
+import { Box, Heading, Text } from '@chakra-ui/react'
 import React from 'react'
+import Title from './Title'
 
 const OurServices = () => {
     return (
         <div>
-            <Box color={'main.blueColor'} >Our services</Box>
+            <Title />
         </div>
     )
 }
