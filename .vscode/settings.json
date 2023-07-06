@@ -12,7 +12,12 @@
 //   "editor.defaultFormatter": "dsznajder.es7-react-js-snippets"
 // }
 {
-    "maven.view": "flat",
-    "eslint.codeActionsOnSave.mode": "problems",
-    "eslint.enable": false
+  "maven.view": "flat",
+  "eslint.codeActionsOnSave.mode": "problems",
+  "eslint.enable": false,
+  "colorize.languages": [
+    "javascript",
+    "typescript"
+    // ...
+  ]
 }

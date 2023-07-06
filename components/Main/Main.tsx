@@ -1,11 +1,13 @@
-import OurServices from "./OurServices/OurServices"
+import Innovation from './Innovation/Innovation';
+import OurServices from './OurServices/OurServices';
 
 const MainComponent = () => {
-    return (
-        <div>
-            <OurServices />
-        </div>
-    )
-}
+  return (
+    <div>
+      <OurServices />
+      <Innovation />
+    </div>
+  );
+};
 
-export default MainComponent
+export default MainComponent;

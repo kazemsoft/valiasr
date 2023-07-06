@@ -1,15 +1,21 @@
-import { Button } from '@chakra-ui/react'
-import React from 'react'
+import { Button, ButtonProps } from '@chakra-ui/react';
+import React from 'react';
 
-type CustomButtonProps = {
-    children: string | JSX.Element
-}
-const CustomButton = ({ children }: CustomButtonProps) => {
-    return (
-        <Button sx={{ "&:hover": { bg: "#0f7e1f" } }} colorScheme={'greenButton'} color={'white'} marginTop={'3rem'}>
-            {children}
-        </Button>
-    )
-}
+type CustomButtonProps = ButtonProps & {
+  children: string | JSX.Element;
+};
+const CustomButton = ({ children, ...rest }: CustomButtonProps) => {
+  return (
+    <Button
+      {...rest}
+      sx={{ '&:hover': { bg: '#0f7e1f' } }}
+      colorScheme={'greenButton'}
+      color={'white'}
+      marginTop={'3rem'}
+    >
+      {children}
+    </Button>
+  );
+};
 
-export default CustomButton
+export default CustomButton;
