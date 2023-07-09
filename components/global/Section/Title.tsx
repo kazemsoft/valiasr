@@ -14,13 +14,21 @@ const Title = ({ title, description, boldText }: TitleProps) => {
           backgroundColor: 'main.secondaryColor',
         }}
       ></Box>
-      <Heading as={'h2'} color={'main.lightBlueColor'}>
+      <Heading  as={'h2'} color={'main.lightBlueColor'}>
         {title}:
       </Heading>
       <Text marginTop={'1rem'}>{description}</Text>
-      <Heading marginTop={'1.75rem'} as={'h4'} size="md">
-        {boldText}
-      </Heading>
+      {boldText && (
+        <Heading
+          fontWeight={'light'}
+          marginTop={'1.75rem'}
+          marginBottom={'4rem'}
+          as={'h4'}
+          size="md"
+        >
+          {boldText}
+        </Heading>
+      )}
     </Box>
   );
 };

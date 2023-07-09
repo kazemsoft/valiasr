@@ -4,7 +4,7 @@ import { CheckCircleIcon } from '@chakra-ui/icons';
 
 const List = () => {
   return (
-    <ChakraList spacing={3}>
+    <ChakraList spacing={3} marginTop={'2rem'}>
       <ListItem>
         <ListIcon as={CheckCircleIcon} color="green.500" />
         Using the WordPress content management system

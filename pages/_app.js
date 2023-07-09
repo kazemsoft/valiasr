@@ -4,6 +4,7 @@ import Header from "../components/Header/Header";
 import { ChakraProvider, Container } from "@chakra-ui/react";
 import { theme } from "../styles/theme";
 import CustomContainer from "../components/global/CustomContainer/CustomContainer";
+import '../styles/globals.css'
 
 function MyApp({ Component, pageProps }) {
   return (

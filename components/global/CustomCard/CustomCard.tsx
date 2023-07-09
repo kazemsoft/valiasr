@@ -41,7 +41,7 @@ const CustomCard = ({
               style={{
                 borderRadius: '1rem',
                 width: '100%',
-                maxHeight: '180px',
+                maxHeight: '150px',
               }}
             />
           </Box>
@@ -60,7 +60,8 @@ const CustomCard = ({
             marginTop={'1rem'}
             color={'main.textColor'}
             as="h6"
-            size="xs"
+            fontWeight={'thin'}
+            size="14px"
           >
             {description}
           </Heading>

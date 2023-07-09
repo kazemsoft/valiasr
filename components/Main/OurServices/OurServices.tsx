@@ -37,7 +37,8 @@ const OurServices = () => {
   return (
     <div>
       <Section
-        title="Our services"
+        // title="Our services"
+        title="Our Safest"
         description="Website design, mobile and desktop application design and programming, SEO and social network management."
         boldText="Below you can see some examples of our recent works:"
       />
