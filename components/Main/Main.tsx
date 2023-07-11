@@ -1,3 +1,4 @@
+import FinalSection from './FinalSection/FinalSection';
 import Innovation from './Innovation/Innovation';
 import OurServices from './OurServices/OurServices';
 
@@ -6,6 +7,7 @@ const MainComponent = () => {
     <div>
       <OurServices />
       <Innovation />
+      <FinalSection />
     </div>
   );
 };

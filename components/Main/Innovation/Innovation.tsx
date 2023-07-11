@@ -8,14 +8,14 @@ const Innovation = () => {
   return (
     <Box marginTop={'100px'}>
       <Grid templateColumns="repeat(2, 1fr)" gap={4}>
-        <GridItem colSpan={1}>
+        <GridItem colSpan={{ base: 2, lg: 1 }}>
           <Section
             title="Innovation and knowledge of society"
             description="Considering the current conditions of our society (high costs and corona conditions), by using some creativity and taste, we have prepared a creative product that will not only help you dear ones to electronicize your business, but will also significantly save your expenses. became."
           />
           <List />
         </GridItem>
-        <GridItem colSpan={1}>
+        <GridItem display={{ base: 'none', lg: 'block' }} colSpan={1}>
           <Grid
             h="100%"
             templateRows="repeat(4, 1fr)"

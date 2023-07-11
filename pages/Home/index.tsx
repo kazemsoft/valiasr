@@ -1,10 +1,10 @@
-import React, { useEffect, useRef } from 'react';
+import React, { useEffect } from 'react';
 import HeaderDescriptions from '../../components/Header/HeaderDiscriptions/HeaderDescriptions';
 import CustomContainer from '../../components/global/CustomContainer/CustomContainer';
 import MainComponent from '../../components/Main/Main';
+import Footer from '../../components/Footer/Footer';
 
 const HomePage = () => {
-  const end = useRef();
   const scrollToBottom = () => {
     window.scrollTo({
       top: 9000,
@@ -17,7 +17,7 @@ const HomePage = () => {
   return (
     <>
       <CustomContainer>
-        <div style={{ margin: '100px 0' }}>
+        <div>
           <HeaderDescriptions />
         </div>
       </CustomContainer>
@@ -26,7 +26,9 @@ const HomePage = () => {
           <MainComponent />
         </div>
       </CustomContainer>
-      <div id="end" ref={end}></div>
+      <div style={{ marginTop: '100px' }}>
+        <Footer />
+      </div>
     </>
   );
 };
