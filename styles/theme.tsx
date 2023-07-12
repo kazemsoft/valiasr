@@ -9,6 +9,7 @@ const colors = {
     gColor: '#61CE70',
     textColor: '#7A7A7A',
     modalBg: '#bababa47',
+    grayTextColor: '#CFCFCF',
   },
   greenButton: {
     100: '#00ff25',
