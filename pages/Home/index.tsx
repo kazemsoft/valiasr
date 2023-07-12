@@ -5,15 +5,15 @@ import MainComponent from '../../components/Main/Main';
 import Footer from '../../components/Footer/Footer';
 
 const HomePage = () => {
-  const scrollToBottom = () => {
-    window.scrollTo({
-      top: 9000,
-      behavior: 'smooth',
-    });
-  };
-  useEffect(() => {
-    scrollToBottom();
-  }, []);
+  // const scrollToBottom = () => {
+  //   window.scrollTo({
+  //     top: 9000,
+  //     behavior: 'smooth',
+  //   });
+  // };
+  // useEffect(() => {
+  //   scrollToBottom();
+  // }, []);
   return (
     <>
       <CustomContainer>
