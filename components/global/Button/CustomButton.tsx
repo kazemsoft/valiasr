@@ -4,14 +4,18 @@ import React from 'react';
 type CustomButtonProps = ButtonProps & {
   children: string | JSX.Element;
 };
-const CustomButton = ({ children, ...rest }: CustomButtonProps) => {
+const CustomButton = ({
+  children,
+  marginTop = '3rem',
+  ...rest
+}: CustomButtonProps) => {
   return (
     <Button
       {...rest}
       sx={{ '&:hover': { bg: '#0f7e1f' } }}
       colorScheme={'greenButton'}
       color={'white'}
-      marginTop={'3rem'}
+      marginTop={marginTop}
     >
       {children}
     </Button>

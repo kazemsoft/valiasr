@@ -26,9 +26,6 @@ const HomePage = () => {
           <MainComponent />
         </div>
       </CustomContainer>
-      <div style={{ marginTop: '100px' }}>
-        <Footer />
-      </div>
     </>
   );
 };

@@ -11,9 +11,10 @@ import { BsTelegram } from 'react-icons/bs';
 const Footer = () => {
   return (
     <Grid
-      templateColumns="repeat(3, 1fr)"
+      templateColumns={{ base: 'repeat(1, 1fr)', lg: 'repeat(3, 1fr)' }}
       gap={16}
-      height="350px"
+      minHeight="350px"
+      height={'auto'}
       bgColor={'main.textColor'}
       padding={'1rem 3rem'}
     >

@@ -1,10 +1,11 @@
-import "../assets/styles/globals.css";
-import { appWithTranslation } from "next-i18next";
-import Header from "../components/Header/Header";
-import { ChakraProvider, Container } from "@chakra-ui/react";
-import { theme } from "../styles/theme";
-import CustomContainer from "../components/global/CustomContainer/CustomContainer";
-import '../styles/globals.css'
+import '../assets/styles/globals.css';
+import { appWithTranslation } from 'next-i18next';
+import Header from '../components/Header/Header';
+import { ChakraProvider, Container } from '@chakra-ui/react';
+import { theme } from '../styles/theme';
+import CustomContainer from '../components/global/CustomContainer/CustomContainer';
+import '../styles/globals.css';
+import Footer from '../components/Footer/Footer';
 
 function MyApp({ Component, pageProps }) {
   return (
@@ -13,6 +14,9 @@ function MyApp({ Component, pageProps }) {
         <Header />
       </CustomContainer>
       <Component {...pageProps} />
+      <div style={{ marginTop: '100px' }}>
+        <Footer />
+      </div>
     </ChakraProvider>
   );
 }

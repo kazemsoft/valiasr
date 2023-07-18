@@ -1,5 +1,6 @@
-import { Box, Button, Collapse, Text } from "@chakra-ui/react";
-import { MenuItems } from "./Nav";
+import { Box, Button, Collapse, Text } from '@chakra-ui/react';
+import { MenuItems } from './Nav';
+import Link from 'next/link';
 
 type AccordianMenuProps = {
   isOpen: boolean;
@@ -7,7 +8,6 @@ type AccordianMenuProps = {
 };
 const AccordianMenu = ({ isOpen, menuItems }: AccordianMenuProps) => {
   return (
-
     <Collapse style={{ borderRadius: 8 }} in={isOpen} animateOpacity>
       <Box
         p="16px"
@@ -16,28 +16,29 @@ const AccordianMenu = ({ isOpen, menuItems }: AccordianMenuProps) => {
         bg="main.modalBg"
         shadow="2xl"
       >
-        {menuItems.map(({ text }, i) => (
-          <Box
-            key={i}
-            style={{
-              transition: "all .3s ease",
-              cursor: "pointer",
-              padding: 8,
-            }}
-            rounded={"md"}
-            sx={{
-              "&:hover": {
-                backgroundColor: "white",
-                transition: "all .3s ease",
-              },
-            }}
-          >
-            <Text>{text}</Text>
-          </Box>
+        {menuItems.map(({ text, link }, i) => (
+          <Link href={link}>
+            <Box
+              key={i}
+              style={{
+                transition: 'all .3s ease',
+                cursor: 'pointer',
+                padding: 8,
+              }}
+              rounded={'md'}
+              sx={{
+                '&:hover': {
+                  backgroundColor: 'white',
+                  transition: 'all .3s ease',
+                },
+              }}
+            >
+              <Text>{text}</Text>
+            </Box>
+          </Link>
         ))}
       </Box>
     </Collapse>
-
   );
 };
 
